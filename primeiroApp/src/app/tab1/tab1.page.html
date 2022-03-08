@@ -22,9 +22,13 @@
   </div>
 
   <div id="formulario">
-    <ion-input placeholder="informe a quantidade de páginas do livro"></ion-input>
-    <ion-button expand="block" shape="round">Iniciar</ion-button>
-    
+    <ion-input placeholder="informe a quantidade de páginas" [(ngModel)]="paginas" ></ion-input>
+    <ion-button *ngIf="controleButao == false" expand="block" shape="round" (click)="start()" >Iniciar</ion-button>
+    <ion-button *ngIf="controleButao == true" color="danger" expand="block" shape="round" (click)="stop()">Parar</ion-button>    
+  </div>
+
+  <div id="tempo">
+    <img src="assets/image/time.gif" alt="relogio">
   </div>
 
   

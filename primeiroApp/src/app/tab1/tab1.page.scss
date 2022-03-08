@@ -30,8 +30,8 @@ ion-content{
         }
 
         img{
-            width: 170px;
-            height: 170px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             border: 1px solid rgb(17, 17, 17);
         }
@@ -44,8 +44,34 @@ ion-content{
         
         ion-input{
             background-color: rgb(141, 141, 141);
-            border-radius: 10px;
-        }       
+            border-radius: 50px;
+        }
+        
+        ion-button{
+            margin-top: 7px;
+            font-size: 15px;
+            --background: rgb(40, 140, 240);
+        }
 
     }
+
+    div#tempo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 150px;
+            height: 150px;
+
+            filter: 
+            brightness(90%) 
+            contrast(90%) 
+            hue-rotate(300deg) 
+            opacity(90%) saturate(90%)
+            grayscale(20%);
+            
+        }
+    }
+
 }

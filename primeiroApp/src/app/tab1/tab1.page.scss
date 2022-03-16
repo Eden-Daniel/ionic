@@ -74,4 +74,26 @@ ion-content{
         }
     }
 
+    div#resultado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        background-color: rgb(141, 141, 141);
+        padding: 15px;
+        border-radius: 30px;
+
+    }
+
+    ion-label#tempoFinal{
+        font-size: 20px;
+    }
+
+    footer{
+        margin-top: 40px;
+        color: rgba(211, 211, 211, 0.500);
+        text-align: center;
+        font-size: 14px;
+    }
+
 }

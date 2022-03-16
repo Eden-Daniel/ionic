@@ -27,9 +27,22 @@
     <ion-button *ngIf="controleButao == true" color="danger" expand="block" shape="round" (click)="stop()">Parar</ion-button>    
   </div>
 
-  <div id="tempo">
+  <div id="tempo" *ngIf="controleButao == true">
     <img src="assets/image/time.gif" alt="relogio">
   </div>
+
+  <div id="resultado" *ngIf="controleButao == false && resultado != null">
+    <ion-label>Tempo estimado para você concluir o livro:</ion-label>
+    <br>
+    <ion-label>hh:mm:ss</ion-label>
+    <br>
+    <ion-label id="tempoFinal">{{resultado}}</ion-label>
+    <ion-button color="warning" (click)="reiniciar()">Reiniciar</ion-button>
+  </div>
+
+  <footer>
+    <p>Aplicativo desenvolvido por <br> Éden Daniel - 2022</p>
+  </footer>
 
   
 </ion-content>
